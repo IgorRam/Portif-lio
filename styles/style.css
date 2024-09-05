@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secuntaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: "Montserrat", sans-serif;
+    --fonte-secudaria: "Krona One", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.apresenacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8% 18%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secuntaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_link {
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.separacao {
+    display: flex;
+    gap: 80px;
+}
+
+.Titulo-destaque {
+    color:var(--cor-terciaria);
+}
+
+.titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-secudaria);
+    margin: 15px;
+}
+
+.paragrafo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+.texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.subtitulo_links {
+    font-family: var(--fonte-secudaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--cor-secuntaria);
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+}
+
+.link:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    padding: 24px;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.imagem {
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .separacao {
+        justify-content: center;
+    }
+    .apresenacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .texto {
+        width: auto;
+    }
+}
